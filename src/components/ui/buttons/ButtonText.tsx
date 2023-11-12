@@ -8,7 +8,7 @@ type Props = {
   href?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-export default function Button({
+export default function ButtonText({
   variant = 'primary',
   children,
   href,
@@ -17,23 +17,21 @@ export default function Button({
   if (href) {
     return (
       <Link href={href} passHref>
-        <ButtonElement variant={variant} {...props}>
+        <ButtonTextElement variant={variant} {...props}>
           {children}
-        </ButtonElement>
+        </ButtonTextElement>
       </Link>
     );
   }
   return (
-    <ButtonElement variant={variant} {...props}>
+    <ButtonTextElement variant={variant} {...props}>
       {children}
-    </ButtonElement>
+    </ButtonTextElement>
   );
 }
 
-const ButtonElement = styled.button<Props>`
-  background-color: black;
-  padding: 20px 0;
-  color: #fff;
+const ButtonTextElement = styled.button<Props>`
+  color: #222;
   width: 100%;
-  border-radius: 5px;
+  text-decoration: underline;
 `;
