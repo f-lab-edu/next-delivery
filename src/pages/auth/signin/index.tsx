@@ -2,15 +2,15 @@ import React from 'react';
 
 import HeadPageMeta from '@/components/layouts/HeadPageMeta';
 import LayoutDefault from '@/components/layouts/LayoutDefault';
-import Like from '@/components/pages/like/Like';
+import Signin from '@/components/pages/auth/signin/Signin';
 
-export default function LikePage() {
+export default function SignInPage() {
   return (
     <>
-      <HeadPageMeta title="음식 배달 앱 (next/ts) - 좋아요" />
+      <HeadPageMeta title="로그인" />
 
       <LayoutDefault>
-        <Like />
+        <Signin />
       </LayoutDefault>
     </>
   );

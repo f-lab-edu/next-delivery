@@ -1,16 +1,14 @@
-import React from 'react';
-
 import HeadPageMeta from '@/components/layouts/HeadPageMeta';
 import LayoutDefault from '@/components/layouts/LayoutDefault';
-import Like from '@/components/pages/like/Like';
+import Signup from '@/components/pages/auth/singup/Singup';
 
-export default function LikePage() {
+export default function SignUpPage() {
   return (
     <>
-      <HeadPageMeta title="음식 배달 앱 (next/ts) - 좋아요" />
+      <HeadPageMeta title="회원가입" />
 
       <LayoutDefault>
-        <Like />
+        <Signup />
       </LayoutDefault>
     </>
   );
